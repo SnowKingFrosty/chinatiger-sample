@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>China Tiger</title>
-    <link rel="stylesheet" href="styles.css?v=nav-fix-2">
+    <link rel="stylesheet" href="styles.css?v=tab-fix-3">
     <style>
       body {
         margin: 0;
@@ -48,14 +48,6 @@
     </style>
   </head>
 
-  <script>
-    function showTab(tabId, clickedButton) {
-      document.getElementById(tabId).hidden = false;
-      document.querySelectorAll(".button-row button").forEach(button => {
-      });
-      clickedButton.classList.add("active");
-    }
-  </script>
 
   <body>
     <div class="restaurantsite-header">
@@ -64,8 +56,8 @@
     </div>
     <nav class="button-row" aria-label="Main navigation">
       <button type="button" class="active" onclick="showTab('home', this)">Home</button>
-      <button type="button" class="active" onclick="showTab('about', this)">About Us</button>
-      <button type="button" class="active" onclick="showTab('menu', this)">Menu</button>
+      <button type="button" onclick="showTab('about', this)">About Us</button>
+      <button type="button" onclick="showTab('menu', this)">Menu</button>
     </nav>
     <main>
       <section id="home" class="tab-content">
@@ -81,5 +73,18 @@
         <p>Placeholder</p>
       </section>
     </main>
+  <script>
+    function showTab(tabId, clickedButton) {
+      // Show only the section matching the selected tab.
+      document.querySelectorAll(".tab-content").forEach(section => {
+        section.hidden = section.id !== tabId;
+      });
+
+      // Highlight only the selected button.
+      document.querySelectorAll(".button-row button").forEach(button => {
+        button.classList.toggle("active", button === clickedButton);
+      });
+    }
+  </script>
   </body>
 </html>
