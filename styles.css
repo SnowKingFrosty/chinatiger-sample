@@ -2,7 +2,7 @@
   display: inline-block;
   background-color: #b22222;
   color: white;
-  padding: 14px 14px;
+  padding: 8px 14px;
   border-radius: 8px;
   text-decoration: none;
   font-family: Arial, sans-serif;
@@ -11,6 +11,7 @@
   font-size: 14x;
   margin-left: auto;
   box-sizing: border-box;
+  padding-right: 20px;
 }
 
 .contact-button:hover {
