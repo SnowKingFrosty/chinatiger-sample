@@ -82,7 +82,7 @@
   gap: 8px;
   padding: 8px 14px;
   border-radius: 8px;
-  background-color: #c93400;
+  background-color: #b22222;
   color: white;
   font: bold 14px Arial, sans-serif;
   text-decoration: none;
@@ -96,7 +96,7 @@
 }
 
 .order-button:hover {
-  background-color: #a92b00;
+  background-color: #861919;
 }
 
 .order-button:focus-visible {
