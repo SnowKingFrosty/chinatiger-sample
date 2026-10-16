@@ -48,6 +48,15 @@
     </style>
   </head>
 
+  <script>
+    function showTab(tabId, clickedButton) {
+      document.getElementById(tabId).hidden = false;
+      document.querySelectorAll(".button-row button").forEach(button => {
+      });
+      clickedButton.classList.add("active");
+    }
+  </script>
+
   <body>
     <div class="restaurantsite-header">
       <header class="logo-box"><img src="chinatigerlogo.png" alt="logo" class="logo"></header>
