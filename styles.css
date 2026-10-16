@@ -34,27 +34,26 @@
   flex-wrap: wrap;
 }
 
-.button-row a {
-  display: inline-block;
-  background-color: #b22222;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
+.button-row button {
+  background: transparent;
+  color: #800020;
+  border: none;
+  padding: 10px 24px;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  text-align: center;
-  transition: background-color 0.2s;
+  cursor: pointer;
 }
 
-.button-row a:hover {
-  background-color: #861919;
+.button-row {
+  border-left: 1px solid #aaa;
 }
 
+.button-row button:hover, .button-row button:active {
+  background-color: #800020;
+  color: white;
+}
 
-
-.button-row a:focus-visible {
-  outline: 3px solid #222;
-  outline-offset: 3px;
+.tab-content {
+  padding: 20px;
 }
