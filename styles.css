@@ -1,4 +1,20 @@
-.restaurantlogo {
-  width: 300px;
-  margin: 0 auto;
+.contact-button {
+  display: inline-block;
+  background-color: #b22222;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.contact-button:hover {
+  background-color: #861919;
+}
+
+.contact-button:focus-visible {
+  outline: 3px solid #222;
+  outline-offset: 3px;
 }
