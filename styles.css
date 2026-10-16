@@ -61,3 +61,62 @@
 .tab-content[hidden] {
   display: none;
 }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.header-actions .contact-button {
+  margin-left: 0;
+  white-space: nowrap;
+}
+
+.order-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: #c93400;
+  color: white;
+  font: bold 14px Arial, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.order-button img {
+  display: block;
+  flex-shrink: 0;
+}
+
+.order-button:hover {
+  background-color: #a92b00;
+}
+
+.order-button:focus-visible {
+  outline: 3px solid #222;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .restaurantsite-header {
+    gap: 10px;
+    padding: 16px 12px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .order-button,
+  .header-actions .contact-button {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

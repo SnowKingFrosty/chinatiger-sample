@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>China Tiger</title>
-    <link rel="stylesheet" href="styles.css?v=tab-fix-3">
+    <link rel="stylesheet" href="styles.css?v=order-now-4">
     <style>
       body {
         margin: 0;
@@ -52,7 +52,14 @@
   <body>
     <div class="restaurantsite-header">
       <header class="logo-box"><img src="chinatigerlogo.png" alt="logo" class="logo"></header>
-      <a href="contact.html" class="contact-button">Contact Us</a>
+      <div class="header-actions">
+        <!-- Replace this URL with your restaurant's DoorDash ordering link. -->
+        <a href="https://www.doordash.com/" class="order-button" target="_blank" rel="noopener noreferrer">
+          <img src="doordash.svg" alt="DoorDash" width="24" height="24">
+          <span>Order Now</span>
+        </a>
+        <a href="contact.html" class="contact-button">Contact Us</a>
+      </div>
     </div>
     <nav class="button-row" aria-label="Main navigation">
       <button type="button" class="active" onclick="showTab('home', this)">Home</button>
