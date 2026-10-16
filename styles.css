@@ -25,6 +25,9 @@
 
 .button-row {
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
   justify-content: center;
   gap: 12px;
   padding: 20px;
@@ -32,6 +35,7 @@
 }
 
 .button-row a {
+  display: inline-block;
   background-color: #b22222;
   color: white;
   padding: 10px 18px;
@@ -49,3 +53,8 @@
 }
 
 
+
+.button-row a:focus-visible {
+  outline: 3px solid #222;
+  outline-offset: 3px;
+}
