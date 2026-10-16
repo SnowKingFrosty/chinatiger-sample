@@ -57,3 +57,7 @@
 .tab-content {
   padding: 20px;
 }
+
+.tab-content[hidden] {
+  display: none;
+}
