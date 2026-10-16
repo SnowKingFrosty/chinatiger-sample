@@ -22,3 +22,30 @@
   outline: 3px solid #222;
   outline-offset: 3px;
 }
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.button-row a {
+  background-color: $b22222;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.button-row a:hover {
+  background-color: #861919;
+}
+
+
