@@ -12,8 +12,8 @@
 2. Move the contact section into the new page's `<main>` element. The original phone numbers and address are preserved. `<h1>` identifies the main heading on that page; `<address>` marks up the contact address.
 3. Link to it from the homepage with `<a class="nav-button" href="contact.html">Contact Us</a>`. `href` is the destination. Because both files are in the same folder, only the filename is needed. A normal link is appropriate for navigation; CSS makes it look like a button. No JavaScript is needed.
 4. Put shared CSS in `styles.css` and include `<link rel="stylesheet" href="styles.css">` in each page's `<head>`. This replaces the original inline `<style>` block so changes to the header apply to both pages.
-5. The header uses CSS Grid with `grid-template-columns: 1fr auto 1fr`: equal left and right spaces around the centered logo. The logo is in column 2 and the navigation in column 3. `justify-self: end` places navigation on the right.
-6. The `@media (max-width: 600px)` rule switches to two columns on smaller screens: a logo that can shrink and a button on the right. The viewport meta tag makes mobile browsers use the device's width.
+5. The header preserves the original full-width gradient box, `padding: 20px 0`, bottom border, and Flexbox centering. `position: relative` makes the header the reference box for the navigation.
+6. The navigation uses `position: absolute; top: 20px; right: 20px;`. This places the button in the top-right corner without moving the centered logo. On narrow screens, the logo can shrink to leave room for the button while staying centered.
 7. The contact page links back using `href="index.html"`. Clicking the logo also returns home. The phone links use `tel:` so supported devices can open the dialer.
 
 ## Try it
