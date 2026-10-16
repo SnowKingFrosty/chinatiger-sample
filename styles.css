@@ -11,7 +11,6 @@
   font-size: 14x;
   margin-left: auto;
   box-sizing: border-box;
-  padding-right: 20px;
 }
 
 .contact-button:hover {
@@ -21,4 +20,8 @@
 .contact-button:focus-visible {
   outline: 3px solid #222;
   outline-offset: 3px;
+}
+
+header {
+  padding-right: 20px;
 }
